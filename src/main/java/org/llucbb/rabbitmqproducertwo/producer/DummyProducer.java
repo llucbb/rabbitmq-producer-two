@@ -1,19 +1,18 @@
 package org.llucbb.rabbitmqproducertwo.producer;
 
+import lombok.RequiredArgsConstructor;
+import org.llucbb.rabbitmqproducertwo.entity.DummyMessage;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.course.rabbitmqtwo.entity.DummyMessage;
-
 @Service
+@RequiredArgsConstructor
 public class DummyProducer {
 
-	@Autowired
-	private RabbitTemplate rabbitTemplate;
+    private final RabbitTemplate rabbitTemplate;
 
-	public void sendDummy(DummyMessage message) {
-		rabbitTemplate.convertAndSend("x.dummy", "", message);
-	}
+    public void sendDummy(DummyMessage message) {
+        rabbitTemplate.convertAndSend("x.dummy", "", message);
+    }
 
 }
