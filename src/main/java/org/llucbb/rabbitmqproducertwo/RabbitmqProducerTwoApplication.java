@@ -1,7 +1,7 @@
 package org.llucbb.rabbitmqproducertwo;
 
 import lombok.RequiredArgsConstructor;
-import org.llucbb.rabbitmqproducertwo.entity.DummyMessage;
+import org.llucbb.rabbitmqmodeltwo.entity.DummyMessage;
 import org.llucbb.rabbitmqproducertwo.producer.DummyProducer;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;

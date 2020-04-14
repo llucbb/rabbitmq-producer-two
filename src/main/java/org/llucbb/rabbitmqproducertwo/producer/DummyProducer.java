@@ -1,7 +1,7 @@
 package org.llucbb.rabbitmqproducertwo.producer;
 
 import lombok.RequiredArgsConstructor;
-import org.llucbb.rabbitmqproducertwo.entity.DummyMessage;
+import org.llucbb.rabbitmqmodeltwo.entity.DummyMessage;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.stereotype.Service;
 
